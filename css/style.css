@@ -173,7 +173,12 @@ nav ul li a:hover::after{
 
 /* about section */
 
+.main-content{
+    margin-top: 60px;
+}
+
 .about-section-header{
+    margin-top: 60px;
     text-align: center;
     padding: 2rem 0;
     font-size: 2rem;
@@ -230,7 +235,7 @@ nav ul li a:hover::after{
 /* education section */
  /* Add padding to the body to make up for the fixed navigation */
  /*body {
-    padding-top: 70px; Adjust this value based on the height of your fixed navigation 
+    padding-top: 70px; Adjust this value based on the height of your fixed navigation
 }*/
 
 /* Add this class to the navigation when it should be fixed */
@@ -242,6 +247,7 @@ nav ul li a:hover::after{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     animation: fadeInDown 0.3s;
     border: none;
+    margin-bottom: 20%;
 }
 
 @keyframes fadeInDown {
