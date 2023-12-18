@@ -97,6 +97,7 @@ button[type="submit"] {
 
 /* footer */
 .footer{
+    height: 30vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,6 +108,12 @@ button[type="submit"] {
     font-weight: 400;
     letter-spacing: 1px;
     border-bottom: 1px solid #4CAF50;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/grad.img.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 
@@ -124,5 +131,145 @@ a{
     color: #fff;
 }
 
+/* .important-links{
 
- 
+    width: 30%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, .9);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+} */
+
+.important-links a{
+   border-right: 2px solid #45a049;
+    padding-right: 1rem;
+}
+
+/* remove border right on the last child */
+.important-links a:last-child{
+    border-right: none;
+    padding-right: 0;
+}
+
+.important-links a:hover{
+    color: #4CAF50;
+}
+
+
+
+/* testimonials */
+
+.testimonials-header{
+    text-align: center;
+    margin: 2rem 0;
+    margin-top: 4rem;
+
+}
+
+.testimonials p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+img{
+    height: 200px;
+    border-radius: 8px;
+    transform: scale(1.5);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.corousel{
+    background-color: #087f5b;
+    width: 800px;
+    margin: 100px auto;
+    border-radius: 8px;
+    color: #fff;
+    padding: 32px 48px 32px 86px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    gap: 86px;
+}
+
+.testimonial-text{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.testimonial-author{
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.testimonial-job{
+    font-size: 12px;
+}
+
+/* controls */
+.btn{
+    background-color: #fff;
+    border: none;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, .2);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa{
+    color: #087f5b;
+}
+
+.btn--left{
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn--right{
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+
+/* dots */
+/* .dots{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 32px);
+
+    display: flex;
+    gap: 12px;
+
+} */
+
+/* .dot{
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border: 2px solid #087f5b;
+    border-radius: 50%;
+    cursor: pointer;
+} */
+
+.dot--fill{
+    background-color: #087f5b;
+}
