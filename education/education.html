@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="education.css">
+    <title>Education Information Form</title>
+</head>
+<body>
+    <header>
+        <div class="showcase">
+            <div class="showcase-content">
+                <div class="showcase-description">
+                    <h1 class="l-heading">Education Information Form</h1>
+                <p class="lead">Please fill in the form below to submit your education information</p>
+                </div>
+                
+                <img src="../images/grad.img.png" alt="education">
+            </div>
+        </div>
+    </header>
+
+    <!-- <h1>Education Information</h1> -->
+<div class="container">
+    <form action="">
+        <!-- Personal Information Form -->
+        <div id="personal-info">
+            <h2>Personal Info</h2>
+            <form id="personalInfoForm">
+                <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    <br> <br>
+
+                    <label for="Year Of Birth"> Year Of Birth:</label>
+                
+                    <input type="number" id=" Year Of Birth" name=" Year Of Birth" placeholder="1990" required>
+                    <br>
+                    <br>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <br>
+                    <br>
+
+                    <label for="parentStatus">With Parents:</label>
+                    <select id="parentStatus" name="parentStatus" required>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <br>
+                    <br>
+
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+                    <br>
+                    <br>
+
+                    <!-- <button type="button" onclick="updatePersonalInfo()">Update Personal Information</button> -->
+                    <br>
+            </form>
+        </div>
+
+
+        <div class="primaryInfo">
+            <!-- Primary School Information Form -->
+            <h2>Primary School</h2>
+            <!-- <div class="book-img">
+                <img src="images/book.img.png" alt=" start now">
+            </div> -->
+            <form id="primarySchoolForm">
+                <!-- ... (your existing code) ... -->
+                <label for="primarySchoolName">Primary School Name:</label>
+                        <input type="text" id="primarySchoolName" name="primarySchoolName" placeholder="Enter your primary school name" required>
+                        <br> <br>
+
+                        <label for="primarySchoolGrade">Primary School Grade:</label>
+                        <select id="primarySchoolGrade" name="primarySchoolGrade" required>
+                            <option value="A">A</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="B-">B-</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="C-">C-</option>
+                            <option value="D+">D+</option>
+                            <option value="D">D</option>
+                            <option value="D-">D-</option>
+                            <option value="E">E</option>
+                        </select>
+                        <br> <br>
+
+                        <label for="uploadPrimarySchoolResults">Upload Primary School Results:</label>
+                        <input type="file" id="uploadPrimarySchoolResults" name="uploadPrimarySchoolResults" accept=".pdf, .doc, .docx" required>
+                        <br> <br>
+
+                        <!-- <button type="button" onclick="updateprimarySchoolInfo()">Update primary School Information</button> -->
+            </form>
+        </div>
+
+    <div class="secondaryInfo">
+        <!-- Secondary School Information Form -->
+        <h2>Secondary School</h2>
+        <form id="secondary">
+            <label for="secondary">secondarySchool:</label>
+                    <input type="text" id="highSchool" name="highSchool" placeholder="Enter the secondary school you are joining" required>
+                    <br> <br>
+
+                    <label for="finalGrade">Final Grade:</label>
+                    <select id="finalGrade" name="finalGrade" required>
+                        <option value="A">A</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="B-">B-</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="C-">C-</option>
+                        <option value="D+">D+</option>
+                        <option value="D">D</option>
+                        <option value="D-">D-</option>
+                        <option value="E">E</option>   
+                    </select>
+                    <br> <br>
+                    <label for="uploadsecondarySchoolResults">Upload secondary School Results:</label>
+                    <input type="file" id="uploadPsecondarySchoolResults" name="uploadsecondarySchoolResults" accept=".pdf, .doc, .docx" required>
+                    <br> <br>
+                    <label for="uploadsecondarySchoolID">Upload secondary School ID:</label>
+                    <input type="file" id="uploadHighSchoolID" name="uploadHighSchoolID" accept=".pdf, .doc, .docx" required>
+                    <br> <br>
+
+                    <!-- <button type="button" onclick="updatesecondarySchoolInfo()">Update secondary School Information</button> -->
+        </form>
+    </div>
+
+        <!-- Higher Education Information Form -->
+        <div id="university-info">
+            <h2>University / College</h2>
+            <form id="higherEducationForm">
+                <!-- ... (your existing code) ... -->
+                <select id="higherEducation" name="higherEducation" required>
+                    <option value="university">University</option>
+                    <option value="college">College</option>
+                    <option value="polytechnic">Polytechnic</option>
+                </select>
+                    <br> <br>
+                    <label for="uploadhighereducationID">Upload highereducationID ID:</label>
+                    <input type="file" id="uploadhighereducationID" name="uploadhighereducationID" accept=".pdf, .doc, .docx" required>
+                    <br> <br>
+
+                    <label for="cummulative GPA">Upload cummulative GPA:</label>
+                    <input type="file" id="cummulative GPA" name="cummulative GPA" accept=".pdf, .doc, .docx" required>
+                    <br> <br>
+                    <!-- <button type="button" onclick="updatehighereducationIDInfo()">Update highereducationID Information</button> -->
+            </form>
+        </div>
+
+        <!-- Additional Information Form -->
+        <div id="additional-info">
+            <h2>Additional Information</h2>
+            <form id="additionalInfoForm">
+                <!-- ... (your existing code) ... -->
+                <label for="nationalID">National ID:</label>
+                    <input type="text" id="nationalID" name="nationalID" placeholder="Enter your national ID" required>
+                    <br> <br>
+
+                    <label for="uploadPersonalPhoto">Upload Personal Photo:</label>
+                    <input type="file" id="uploadPersonalPhoto" name="uploadPersonalPhoto" accept=".jpg, .jpeg, .png" required>
+                    <br> <br>
+            </form>
+        </div>
+        <br>
+        <button class="submit-btn" type="submit">Submit All Details</button>
+    </form>
+</div>
+
+<!-- footer -->
+<footer>
+    <div class="footer">
+      <div class="contact">
+        <span><i class="fas fa-phone"></i> &nbsp; 0722 000 000</span>
+      </div>
+      <div class="contact">
+        <span><i class="fas fa-envelope"></i> &nbsp;nyeri@gmail.com</span>
+      </div>
+      <div class="social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+
+    </div>
+        <div class="footer-bottom">
+            <p>© 2020 Nyeri County Government Education Track System. All Rights Reserved.</p>
+        </div>
+  </footer>
+
+</body>
+</html>
